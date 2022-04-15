@@ -20,5 +20,5 @@ Classes & instance variables:
         - The job of the class is to read input and display anything that appears in the terminal.
     - ReadWrite:
         -
-    - TextWritter
+    - TextWriter
         -
