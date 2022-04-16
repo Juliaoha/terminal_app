@@ -11,3 +11,5 @@ gem "rubocop", "~> 1.27"
 gem "faker", "~> 2.20"
 
 gem "pdf-writer", "~> 1.1"
+
+gem "rspec", "~> 3.11"
