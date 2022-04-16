@@ -22,3 +22,10 @@ Classes & instance variables:
         -
     - TextWriter
         -
+
+Gems:
+
+- Colorize
+- Rubocop
+- PDF writer tbc
+- Faker
