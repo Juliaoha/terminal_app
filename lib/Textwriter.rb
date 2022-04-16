@@ -1,0 +1,2 @@
+class TextWriter
+end
