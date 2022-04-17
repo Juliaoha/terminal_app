@@ -13,9 +13,9 @@ Architecture:
 Classes & instance variables:
 
     - Term:
-        - @name, @sub_name(optional), @description, @references, @category, @@total_terms
+        - @name, @sub_name(optional), @description, @references, @categories, @@total_terms
     - Category:
-        - @name, @@total_terms
+        - @name
     - InputOutput:
         - The job of the class is to read input and display anything that appears in the terminal.
     - ReadWrite:
