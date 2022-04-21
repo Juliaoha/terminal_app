@@ -1,13 +1,12 @@
 class Term
-    attr_reader :name, :sub_name, :description, :references, :categories
+    attr_reader :name, :sub_name, :description, :references
     @@total_terms = 0
 
-    def initialize(name, sub_name, description, reference, categories)
+    def initialize(name, sub_name, description, reference)
         @name = name
         @sub_name = sub_name
         @description = description
-        @references = reference
-        @categories = categories
+        @references = references
         @@total_terms += 1
     end
 
