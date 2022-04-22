@@ -88,5 +88,16 @@ describe InputOutput do
 
             expect(user_input).to eq("Variable")
         end
-    end    
+    end 
+    
+    describe '#invalid_option_message' do
+        it 'prints invalid option message' do
+            output = StringIO.new
+            input_output = InputOutput.new(output: output)
+
+            input_output.invalid_option_message
+
+            expect(output.string).to eq("Invalid option\n")
+        end
+    end
 end
