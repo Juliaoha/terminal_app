@@ -55,7 +55,7 @@ describe InputOutput do
 
             input_output.print_to_pdf_complete
 
-            expect(output.string).to eq("Done\n")
+            expect(output.string).to eq("Done :)\n")
         end
     end
 
