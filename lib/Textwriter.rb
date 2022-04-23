@@ -1,2 +1,0 @@
-class TextWriter
-end
