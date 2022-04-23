@@ -10,10 +10,10 @@ class PDFWriter
             terms.each do |term|
                 count += 1
                 pdf.text("Term ##{count}", {:size => 14})
-                pdf.text("Term Name: #{term["name"]}", {:size => 14})
-                pdf.text("Sub Name #{term["sub_name"]}", {:size => 14})
-                pdf.text("Description: #{term["description"]}", {:size => 14})
-                pdf.text("Reference: #{term["reference"]}", {:size => 14})
+                pdf.text("Term Name: #{term.name}", {:size => 14})
+                pdf.text("Sub Name #{term.sub_name}", {:size => 14})
+                pdf.text("Description: #{term.description}", {:size => 14})
+                pdf.text("Reference: #{term.reference}", {:size => 14})
                 pdf.move_down(10)
             end
         end
