@@ -138,7 +138,7 @@ $ git clone git@github.com:Juliaoha/terminal_app.git
 ### Change into directory
 
 ```
-$ cd src
+$ cd terminal_app/src
 ```
 
 ### Run bundle install
