@@ -18,7 +18,7 @@ class Search
   end
 
   def found_similar_term(search_word, target_word)
-    # https://stackoverflow.com/a/45335093
+    # a reference for my decision to use the amatch gem https://stackoverflow.com/a/45335093
     return search_word.jaro_similar(target_word) if search_word.jaro_similar(target_word) > 0.8
 
     false
