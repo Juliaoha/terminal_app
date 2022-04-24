@@ -42,6 +42,12 @@ https://github.com/Juliaoha/terminal_app
 
 ---
 
+## Control Flow Diagram
+
+<img src="./docs/logic-flow.png">
+
+---
+
 ## Code style guide
 
 I decided to use `RuboCop` as the code style checker and formatter for my terminal app. Before choosing `Rubocop` I did a bit of research to see which code style guide would suit this project best. I found a few alternatives and compared the ratings on GitHub. The ratings for `RuboCop` were by far the best. Please see below for the screenshots of the ratings.
