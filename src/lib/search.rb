@@ -2,6 +2,7 @@
 
 require 'amatch'
 
+# This class searches for like terms in the stored terms and returns the most similar terms
 class Search
   def return_similar_terms(terms, search_word)
     similar_terms = []

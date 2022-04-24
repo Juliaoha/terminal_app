@@ -3,8 +3,9 @@
 require 'prawn'
 require 'date'
 
+# This class produces a PDF file with all the stored terms
 class PDFWriter
-  # rubocop:disable Metrics/AbcSize
+  # rubocop:disable Metrics/MethodLength,Metrics/AbcSize
   def write_to_pdf(terms)
     count = 0
     Prawn::Document.generate 'Terms.pdf' do |pdf|
@@ -21,5 +22,5 @@ class PDFWriter
       end
     end
   end
-  # rubocop:enable Metrics/AbcSize
+  # rubocop:enable Metrics/MethodLength,Metrics/AbcSize
 end

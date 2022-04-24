@@ -17,11 +17,12 @@ class Mim
     @terms = []
   end
 
+  # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
   def run
     read_json_terms
     while @running
       @input_output.main_menu
-      menu_choice = @input_output.get_user_input
+      menu_choice = @input_output.user_input
 
       case menu_choice
       when '1'
@@ -31,7 +32,7 @@ class Mim
         @read_write.write(new_term)
       when '2'
         @input_output.search_term
-        search_term = @input_output.get_user_input
+        search_term = @input_output.user_input
         similar_terms = @search.return_similar_terms(@read_write.read, search_term)
         @input_output.display_search_results(similar_terms)
       when '3'
@@ -46,6 +47,7 @@ class Mim
       end
     end
   end
+  # rubocop:enable Metrics/MethodLength, Metrics/AbcSize
 
   def read_json_terms
     json_term_array = @read_write.read

@@ -20,16 +20,17 @@ class InputOutput
     @output.puts '[4] Quit'.colorize(:light_magenta)
   end
 
+  # rubocop:disable Metrics/MethodLength
   def create_new_term
     clear_screen
     @output.puts 'Please enter a name for your term'.colorize(:yellow)
-    name = get_user_input
+    name = user_input
     @output.puts 'Please enter the sub name'.colorize(:yellow)
-    sub_name = get_user_input
+    sub_name = user_input
     @output.puts 'Please enter a description'.colorize(:yellow)
-    description = get_user_input
+    description = user_input
     @output.puts 'Please enter a reference'.colorize(:yellow)
-    reference = get_user_input
+    reference = user_input
 
     {
       name: name,
@@ -38,6 +39,7 @@ class InputOutput
       reference: reference
     }
   end
+  # rubocop:enable Metrics/MethodLength
 
   def search_term
     clear_screen
@@ -58,7 +60,7 @@ class InputOutput
     @output.puts 'Thank you for using Project Mim. See you next time'.colorize(:light_magenta)
   end
 
-  def get_user_input
+  def user_input
     @input.gets.strip
   end
 
@@ -66,6 +68,7 @@ class InputOutput
     @output.puts 'Invalid option'.colorize(:red)
   end
 
+  # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
   def display_search_results(results)
     count = 0
     @output.puts 'Search Results:'.colorize(:green)
@@ -80,6 +83,7 @@ class InputOutput
       @output.puts
     end
   end
+  # rubocop:enable Metrics/MethodLength, Metrics/AbcSize
 
   def clear_screen
     @output.puts "\e[H\e[2J"

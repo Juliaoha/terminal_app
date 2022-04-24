@@ -78,12 +78,12 @@ describe InputOutput do
     end
   end
 
-  describe '#get_user_input' do
+  describe '#user_input' do
     it 'gets the user input' do
       input = StringIO.new("TDD\n")
       input_output = InputOutput.new(input: input)
 
-      user_input = input_output.get_user_input
+      user_input = input_output.user_input
 
       expect(user_input).to eq('TDD')
     end
@@ -92,7 +92,7 @@ describe InputOutput do
       input = StringIO.new("         Variable             \n")
       input_output = InputOutput.new(input: input)
 
-      user_input = input_output.get_user_input
+      user_input = input_output.user_input
 
       expect(user_input).to eq('Variable')
     end
